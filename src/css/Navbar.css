@@ -1,5 +1,5 @@
 .logo{
-    height: 75px;
+    height: 72px;
 }
 .Navbar{
     display: flex;
@@ -28,13 +28,30 @@
 
 }
 .Nav-btns{
-    width: 20vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Nav-menu{
-    height: 64px;
+.menu-container-show{
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: none;
+    padding-right: 5vw;
+}
+.menu-container-hide{
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: none;
+    padding-right: 5vw;
+}
+
+.link-divide{
+    background-color: #8B8A8A;
+    height: 1.5px;
+    
+}
+.menu-btn{
+    display: none;
 }
 .menu{
     display: flex;
@@ -48,4 +65,47 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+}
+.link-menu{
+    list-style: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+@media (max-width:1024px) {
+    .menu-btn{
+        display: block;
+        transition: 500ms;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-container-hide{
+        display: block;
+        position: relative;
+        z-index: -2;
+        bottom:150px;
+        transition: 500ms;
+    }
+    .menu-container-show{
+        display: block;
+        position: relative;
+        z-index: -2;
+        bottom:0px;
+        transition: 500ms;
+    }
+}
+@media (max-width:650px) {
+    .logo{
+        height: 48px;
+    }
+    .contact-btn{
+        border: 3px solid #554640;
+        border-radius: 12px;
+        padding: 6px 16px;
+        font-weight: 600;
+        font-size: 16px;
+        
+    }
 }
