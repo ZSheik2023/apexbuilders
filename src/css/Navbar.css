@@ -1,5 +1,25 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+}
+
 .logo{
     height: 72px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.logo :hover{
+    scale: 0.85;
+}
+.navbar-div{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
 }
 .Navbar{
     display: flex;
@@ -11,22 +31,7 @@
     padding-top: 1vw;
     background-color: white;
 }
-.contact-btn{
-    border: 3px solid #554640;
-    border-radius: 12px;
-    padding: 9px 35px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-    color: #554640;
-    background-color: transparent;
-    transition: 500ms;
-}
-.contact-btn:hover{
-    background-color: #554640;
-    color: white;
 
-}
 .Nav-btns{
     display: flex;
     align-items: center;
@@ -36,12 +41,15 @@
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: none;
+    padding: 20px 0px;
     padding-right: 5vw;
+
 }
 .menu-container-hide{
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: none;
+    padding: 20px 0px;
     padding-right: 5vw;
 }
 
@@ -65,6 +73,11 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.link:hover{
+    color:var(--primary) ;
 }
 .link-menu{
     list-style: none;
@@ -85,14 +98,14 @@
         display: block;
         position: relative;
         z-index: -2;
-        bottom:150px;
+        bottom:205px;
         transition: 500ms;
     }
     .menu-container-show{
         display: block;
         position: relative;
         z-index: -2;
-        bottom:0px;
+        bottom:17px;
         transition: 500ms;
     }
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import logo from "../images/logo.png"
 import { Icon } from '@iconify/react';
 import "../css/Navbar.css"
+import "../css/Button.css"
 
 
 const Navbar = () => {
@@ -17,6 +18,7 @@ const Navbar = () => {
   }
   return (
     <div>
+      <div className='navbar-div'>
       <div className='Navbar'>
         <div className='logo'>
             <img src={logo} className='logo' alt='logo'/>
@@ -29,7 +31,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className='Nav-btns'>
-              <button className='contact-btn'>Contact Us</button>
+              <button className='btn-1'>Contact Us</button>
             <div className='hamburger'>
               <Icon icon={navToggle ? "icon-park:hamburger-button"  : "ep:close-bold"} className='menu-btn' width="64" onClick={menuclick} />
             </div>
@@ -47,6 +49,7 @@ const Navbar = () => {
           </div>
           <li className='link-menu'>Services</li>
         </ul>
+      </div>
       </div>
     </div>
   )
