@@ -49,6 +49,20 @@
     transition: 300ms;
     margin: 10px;
 }
+.btn-4{
+    border-radius: 12px;
+    background-color: var(--accent);
+    color: var(--text-1);
+    border: none;
+    padding: 11px 35px;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 300ms;
+    margin: 10px;
+}
+.btn-4:hover{
+    background-color: var(--primary);
+}
 .btn-3:hover{
    background-color: var(--accent);
 }

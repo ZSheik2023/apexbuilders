@@ -2,6 +2,11 @@ import React from 'react'
 import "../css/Button.css"
 import "../css/Home.css"
 import imgB1 from "../images/pexels-anamul-rezwan-1216589.jpg"
+import imgS1 from "../images/pexels-kindel-media-9875412.jpg"
+import imgS2 from "../images/pexels-ksenia-chernaya-5691592.jpg"
+import imgS3 from "../images/pexels-medhat-ayad-447592.jpg"
+import ServiceDiv from './ServiceDiv'
+
 
 export default function Home() {
   return (
@@ -30,6 +35,7 @@ export default function Home() {
         </div>
         <img src={imgB1} alt="b1-img" className='b1-img' />
       </div>
+      <ServiceDiv title="Our Services" img1={imgS1} title1="Solar Installation" img2={imgS2} title2="Painting" img3={imgS3} title3="Interior Design"/>
     </div>
   )
 }

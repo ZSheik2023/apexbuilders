@@ -53,6 +53,7 @@
 /* blog-1 */
 .blog-1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 100px 0px;
@@ -84,5 +85,18 @@
     }
     .hero-p{
         font-size: var(--font-p-m);
+    }
+    .blog-1 img{
+        width: 300px;
+        height: auto;
+    }
+    .b1-h{
+        text-align: center;
+    }
+    .b1-sh{
+        text-align:center;
+    }
+    .b1-list{
+       align-items: center;
     }
 }

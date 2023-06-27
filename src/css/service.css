@@ -1,0 +1,63 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+
+.ServiceDiv{
+    background-color: var(--secondary);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.div-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Div-title{
+    font-family: var(--head);
+    font-weight:600 ;
+    font-size: var(--font-h-d);
+    color: var(--accent);
+    text-align: center;
+}
+.service-img{
+    height: 410px;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+.service-h{
+    font-family: var(--head);
+    font-size: var(--font-h-m);
+}
+
+@media (max-width:650px) {
+    .service-img{
+        height: 360px;
+    }
+    .Div-title{
+        font-size: var(--font-h-t);
+    }
+    .service-h{
+        font-size: var(--font-h2-m);
+    }
+}
