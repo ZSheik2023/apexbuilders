@@ -4,6 +4,9 @@ import "../css/service.css"
 import "../css/Button.css"
 
 export default function ServiceDiv(props) {
+  const myVisibility = {
+    display: props.visibility
+  }
   return (
     <div>
       <div className='ServiceDiv'>
@@ -14,7 +17,7 @@ export default function ServiceDiv(props) {
         <Service img={props.img3} title={props.title3}/>
         </div>
         <div className='btn-div'>
-        <button className='btn-4'>Show more</button>
+        <button className='btn-4' style={myVisibility}>Show more</button>
         </div>
       </div>
     </div>
