@@ -16,8 +16,8 @@
 
 .ServiceDiv{
     background-color: var(--secondary);
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 .div-imgs{
     display: flex;
