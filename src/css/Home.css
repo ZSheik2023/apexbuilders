@@ -159,7 +159,99 @@
     font-style: normal;
     line-height: normal;
 }
+/* blog-4 */
+.blog-4{
+    display: flex;
+    width: 80%;
+    margin: 5% auto;
+    padding: 2%;
+    background-image: url("../images/Frame\ 65.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.b4-div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 2;
+    width: 70%;
+}
+.blog-4 h2{
+    color: var(--text-1, #FFF);
+    font-size: var(--font-h-d);
+    font-family:var(--head);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.blog-4 button{
+    border-radius: 12px;
+    background-color: var(--accent);
+    color: var(--text-1);
+    border: none;
+    padding: 11px 35px;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 300ms;
+    margin: 10px;
+    margin-right: -150px;
+}
+.blog-5{
+    display: flex;
+    text-align: center;
+    background-color: var(--accent);
+    align-items: flex-end;
+    padding: 2%;
+    margin: 5% auto;
+}
+.blog-5 h2{
+    color: var(--secondary);
+font-size: var(--font-h-d);
+font-family:var(--head);
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.blog-5 img{
+    height: 199px;
+}
+.blog-5 p{
+    color: var(--text-1);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--body);
+    font-style: normal;
+    line-height: normal;
+}
+@media (max-width:1024px){
+    .blog-4 button{
+        margin-right: 230px;
+    }
+    .blog-4{
+        background-image: url("../images/Frame\ 70.jpg");
+        background-position: right;
+    }
+    .blog-5 img{
+        display: none;
+    }
+    
+}
 @media (max-width:650px) {
+    .blog-4{
+       background-image: url("../images/Frame\ 69.jpg");
+       background-position: right;
+    }
+    
+    .blog-4 button{
+        margin-right: 50px;
+        font-size: var(--font-p-m);
+    }
+    .blog-4 h2{
+        font-size: 20px;
+    }
     .hero{
         padding-top: 100px;
         padding-bottom: 50px;
@@ -184,4 +276,3 @@
        align-items: center;
     }
 }
-

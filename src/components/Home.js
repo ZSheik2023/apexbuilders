@@ -5,6 +5,11 @@ import imgB1 from "../images/pexels-anamul-rezwan-1216589.jpg"
 import imgS1 from "../images/pexels-kindel-media-9875412.jpg"
 import imgS2 from "../images/pexels-ksenia-chernaya-5691592.jpg"
 import imgS3 from "../images/pexels-medhat-ayad-447592.jpg"
+import imgS4 from "../images/pexels-andrea-piacquadio-3931131.jpg"
+import imgS5 from "../images/pexels-kindel-media-8487764.jpg"
+import imgS6 from "../images/pexels-mikael-blomkvist-8960992.jpg"
+import imgB51 from "../images/construction-truck-2.png"
+import imgB52 from "../images/construction-truck-1.png"
 import ServiceDiv from './ServiceDiv'
 
 
@@ -35,7 +40,7 @@ export default function Home() {
         </div>
         <img src={imgB1} alt="b1-img" className='b1-img' />
       </div>
-      <ServiceDiv title="Our Services" img1={imgS1} title1="Solar Installation" img2={imgS2} title2="Painting" img3={imgS3} title3="Interior Design" />
+      <ServiceDiv title="Our Services" img1={imgS1} title1="Solar Installation" img2={imgS2} title2="Painting" img3={imgS3} title3="Interior Design" visibilityst1="none" visibilityst2="none" visibilityst3="none"/>
       <div className='blog-2'>
         <h2 className='b2-h'>Our Goals</h2>
         <div className='b2-div'>
@@ -74,6 +79,22 @@ export default function Home() {
               <p className='b3d-p'>Government Projects</p>
             </div>
           </div>
+        </div>
+        <div className='blog-4'>
+          <div className='b4-div1'>
+            <h2>Do you have a project <br/> to discuss?</h2>
+            <button>learn more</button>
+          </div>
+        </div>
+        <ServiceDiv title="Our Services" img1={imgS4} title1="Jake Warner" img2={imgS5} title2="Linda Rose" img3={imgS6} title3="George will" st1="Chairman" st2="Senior Engineer" st3="Architect" visibility="none"/>
+        <div className='blog-5'>
+          <img src={imgB51} alt="" />
+          <div>
+            <h2>Construction Solutions for Every Need</h2>
+            <p>From design to completion, our customized construction <br/> solutions meet all your needs</p>
+            <button className='btn-5'>Contact Us</button>
+          </div>
+          <img src={imgB52} alt="" />
         </div>
     </div>
   )

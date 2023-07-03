@@ -49,6 +49,16 @@
     font-family: var(--head);
     font-size: var(--font-h-m);
 }
+.service-sh{
+    color: var(--text-2, #000);
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--body);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
 
 @media (max-width:650px) {
     .service-img{
