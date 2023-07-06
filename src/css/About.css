@@ -1,0 +1,29 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+.Ablog-1{
+    margin-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-image: url("../images/Frame\ 70.jpg");
+    background-position: center;
+}
+.Ablog-1 h1{
+    color: var(--text-1);
+    font-size: var(--font-h-d);
+    margin: 10px auto;
+    font-family: var(--head);
+    text-align: center;
+}

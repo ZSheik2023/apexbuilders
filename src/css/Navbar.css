@@ -70,13 +70,17 @@
 }
 .link{
     list-style: none;
+}
+.linked{
+    color: var(--text-2);
+    text-decoration: none;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     transition: 300ms;
     cursor: pointer;
 }
-.link:hover{
+.linked:hover{
     color:var(--primary) ;
 }
 .link-menu{

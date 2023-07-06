@@ -209,11 +209,11 @@
 }
 .blog-5 h2{
     color: var(--secondary);
-font-size: var(--font-h-d);
-font-family:var(--head);
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-size: var(--font-h-d);
+    font-family:var(--head);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 .blog-5 img{
     height: 199px;

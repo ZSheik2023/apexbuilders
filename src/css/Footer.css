@@ -1,0 +1,84 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+.footerlogo{
+    height: 72px;
+    transition: 300ms;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.footerlogo :hover{
+    scale: 0.85;
+}
+.footer-div{
+    background-color: #363230;
+    padding-bottom: 50px;
+}
+.footer-subdiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pages-h{
+    font-size: var(--font-h-t);
+    color: var(--primary);
+}
+.pages-div li{
+    list-style: none;
+    font-size: 24px;
+    color: var(--text-1);
+    margin: 15px;
+}
+.pages-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40vw;
+}
+.address-div h3{
+    font-size: var(--font-h-t);
+    color: var(--primary);
+}
+.address-div p{
+    font-size: 24px;
+    color: var(--text-1);
+    margin-left: 25px;
+}
+.Social-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Social-div h3{
+    font-size: var(--font-h-t);
+    color: var(--primary);
+}
+.icon{
+    font-size: 54px;
+    color: var(--text-1);
+    transition: 500ms;
+    margin: 1% 15px;
+}
+.icon :hover{
+    color: var(--secondary);
+}
+@media (max-width:650px) {
+    .logo{
+        height: 48px;
+    }
+}
