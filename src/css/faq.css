@@ -1,0 +1,45 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+
+.faq{
+    margin: 20px 0px;
+    padding: 8px 10px;
+    background-color: var(--primary);
+    color: var(--text-1);
+    border-radius: 30px;
+}
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq h4{
+    color: var(--text-1, #FFF);
+    font-family: var(--head);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.faq p{
+    color: var(--text-1, #FFF);
+    font-family: var(--body);
+    font-size: var(--font-p-d);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -20px;
+}

@@ -20,6 +20,7 @@
     position: fixed;
     top: 0px;
     width: 100vw;
+    z-index: 3;
 }
 .Navbar{
     display: flex;
@@ -30,6 +31,13 @@
     padding-right: 3vw;
     padding-top: 1vw;
     background-color: white;
+}
+.navbar{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
 }
 
 .Nav-btns{

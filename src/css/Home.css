@@ -20,6 +20,7 @@
     background: linear-gradient(153deg, #AE7461 0%, #DDA15E 100%);;
     border-radius: 12px;
 }
+
 /* hero */
 .hero{
     padding-top: 150px;
@@ -53,10 +54,12 @@
 
 /* blog-1 */
 .blog-1{
+    max-width: 1140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px auto;
     padding: 100px 0px;
 }
 .b1-h{
@@ -78,7 +81,8 @@
 }
 /* blog-2 */
 .blog-2{
-    margin: 40px 0px;
+    max-width: 1140px;
+    margin: 40px auto;
 }
 .b2-h{
     font-size: var(--font-h-t);
@@ -89,7 +93,7 @@
 }
 .b2-div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .b2-box{
@@ -108,6 +112,7 @@
 .blog-3{
     background-color: var(--accent);
     padding: 30px 0px;
+    
 }
 .b3-h{
     color: var(--primary);
@@ -136,11 +141,15 @@
 }
 .b3-div1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.b3-div{
+    max-width: 1140px;
+    margin: 0px auto;
 }
 .b3-div2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 25px;
 }
 .b3d-h{
@@ -169,6 +178,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1140px;
 }
 .b4-div1 {
     display: flex;
@@ -207,6 +217,11 @@
     padding: 2%;
     margin: 5% auto;
 }
+.b5-div{
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex;
+}
 .blog-5 h2{
     color: var(--secondary);
     font-size: var(--font-h-d);
@@ -214,6 +229,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
 }
 .blog-5 img{
     height: 199px;
@@ -225,6 +241,7 @@
     font-family: var(--body);
     font-style: normal;
     line-height: normal;
+    text-align: center;
 }
 @media (max-width:1024px){
     .blog-4 button{

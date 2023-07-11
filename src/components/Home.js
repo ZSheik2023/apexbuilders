@@ -8,14 +8,13 @@ import imgS3 from "../images/pexels-medhat-ayad-447592.jpg"
 import imgS4 from "../images/pexels-andrea-piacquadio-3931131.jpg"
 import imgS5 from "../images/pexels-kindel-media-8487764.jpg"
 import imgS6 from "../images/pexels-mikael-blomkvist-8960992.jpg"
-import imgB51 from "../images/construction-truck-2.png"
-import imgB52 from "../images/construction-truck-1.png"
 import ServiceDiv from './ServiceDiv'
 
 
 export default function Home() {
+  document.title = "Apex Buliders - Home"
   return (
-    <div>
+    <div className='home-page'>
       <div className='hero'>
         <h1 className='hero-h'>
           Experienced Craftsmen for all <br /> your Construction needs
@@ -56,6 +55,7 @@ export default function Home() {
         </div>
       </div>
       <div className='blog-3'>
+        <div className='b3-div'>
         <h1 className='b3-h'>Industrial Achivements</h1>
         <h2 className='b3-sh'>Trustworthy & Reliable</h2>
         <p className='b3-p'>The Apex website provides a comprehensive overview of the construction industry, including current <br /> trends, market analysis, and innovative solutions. Repel is a one-stop destination for everything <br /> related to the industry.</p>
@@ -79,6 +79,7 @@ export default function Home() {
               <p className='b3d-p'>Government Projects</p>
             </div>
           </div>
+          </div>
         </div>
         <div className='blog-4'>
           <div className='b4-div1'>
@@ -87,14 +88,16 @@ export default function Home() {
           </div>
         </div>
         <ServiceDiv title="Our Services" img1={imgS4} title1="Jake Warner" img2={imgS5} title2="Linda Rose" img3={imgS6} title3="George will" st1="Chairman" st2="Senior Engineer" st3="Architect" visibility="none"/>
+        <div>
         <div className='blog-5'>
-          <img src={imgB51} alt="" />
+          <div className='b5-div' >
           <div>
             <h2>Construction Solutions for Every Need</h2>
             <p>From design to completion, our customized construction <br/> solutions meet all your needs</p>
             <button className='btn-5'>Contact Us</button>
           </div>
-          <img src={imgB52} alt="" />
+          </div>
+        </div>
         </div>
     </div>
   )

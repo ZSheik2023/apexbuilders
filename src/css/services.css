@@ -1,0 +1,60 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+.Sblog-1{
+    margin-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    background-image: url("../images/Frame\ 72.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Sblog-1 h1{
+    color: var(--text-1);
+    font-size: var(--font-h-d);
+    margin: 10px auto;
+    font-family: var(--head);
+    text-align: center;
+}
+.service-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.faq-container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.faq-div{
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+.faq-head{
+    display: flex;
+    align-items: center;
+}
+.faq-head h2{
+    color: var(--accent);
+    font-size: var(--font-h-t);
+    font-family: var(--head);
+}

@@ -21,6 +21,7 @@ const Navbar = () => {
     <div>
       <div className='navbar-div'>
       <div className='Navbar'>
+        <div className='navbar'>
         <div className='logo'>
             <Link to="/"><img src={logo} className='logo' alt='logo'/></Link>
         </div>
@@ -36,6 +37,7 @@ const Navbar = () => {
             <div className='hamburger'>
               <Icon icon={navToggle ? "icon-park:hamburger-button"  : "ep:close-bold"} className='menu-btn' width="64" onClick={menuclick} />
             </div>
+        </div>
         </div>
       </div>
       <div className={navToggle ? "menu-container-hide "  : "menu-container-show"}>

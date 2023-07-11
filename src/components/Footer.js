@@ -6,6 +6,7 @@ import "../css/Footer.css"
 export default function Footer() {
   return (
     <div className='footer-div'>
+      <div className='footer'>
       <div>
         <img src={logo} alt="logo" className='footerlogo'/>
       </div>
@@ -47,6 +48,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

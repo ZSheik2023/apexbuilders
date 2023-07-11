@@ -22,8 +22,10 @@
 .div-imgs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 1140px;
+    margin: 0px auto;
 }
 .service{
     display: flex;

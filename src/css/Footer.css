@@ -13,6 +13,10 @@
     --font-p-d:20px;
     --font-p-m :16px
 }
+.footer{
+    max-width: 1300px;
+    margin: 0px auto;
+}
 .footerlogo{
     height: 72px;
     transition: 300ms;
@@ -26,6 +30,7 @@
 .footer-div{
     background-color: #363230;
     padding-bottom: 50px;
+    margin-top: 30px;
 }
 .footer-subdiv{
     display: flex;
@@ -47,7 +52,6 @@
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 40vw;
 }
 .address-div h3{
     font-size: var(--font-h-t);
