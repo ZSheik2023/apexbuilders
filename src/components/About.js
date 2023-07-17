@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import "../css/About.css"
 import "../css/Button.css"
 import ServiceDiv from './ServiceDiv'
@@ -23,7 +24,7 @@ export default function About() {
           <h2>Building for future</h2>
           <p>Our company has a rich history of success, built on a foundation of <br /> hard work, honesty, and a passion for construction. <br /><br /><br />
             At Apex, we are committed to building structures that stand the <br /> test of time. Our team of experienced professionals is dedicated to <br /> delivering high-quality construction projects that exceed our clients'<br /> expectations. We believe in the power of purposeful construction, <br /> and we work tirelessly to ensure that each and every project we <br /> undertake is built with a clear goal in mind.</p>
-          <button className='btn-6'>Our Services</button>
+            <Link to="/service"  ><button className='btn-6'>Our Services</button></Link>
         </div>
         <img src={imgB2} alt="this is a b2 img" />
       </div>
@@ -47,7 +48,7 @@ export default function About() {
             <li>Livable, sustainable cities</li>
             <li>Safe and relaible Construction</li>
           </ul>
-          <button className='btn-4'>Contact Us</button>
+          <Link to="/contact"  ><button className='btn-4'>Contact Us</button></Link>
         </div>
       </div>
       <ServiceDiv title="Our Services" img1={imgS1} title1="Solar Installation" img2={imgS2} title2="Painting" img3={imgS3} title3="Interior Design" visibilityst1="none" visibilityst2="none" visibilityst3="none" />

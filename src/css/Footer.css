@@ -75,11 +75,21 @@
 .icon{
     font-size: 54px;
     color: var(--text-1);
-    transition: 500ms;
     margin: 1% 15px;
+    cursor: pointer;
 }
 .icon :hover{
     color: var(--secondary);
+    transition: 300ms;
+}
+.linked-f{
+    color: var(--text-1);
+    cursor: pointer;
+    text-decoration: none;
+}
+.linked-f:hover{
+    color: var(--primary);
+    transition: 300ms;
 }
 @media (max-width:650px) {
     .logo{

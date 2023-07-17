@@ -1,0 +1,111 @@
+:root{
+    --primary : #DDA15E;
+    --secondary : #EFDAB2;
+    --accent: #554640;
+    --text-1:white;
+    --text-2:black;
+    --head:'Poppins', sans-serif;
+    --body:'Open Sans', sans-serif;
+    --font-h-d : 48px;
+    --font-h-t : 40px;
+    --font-h-m : 36px;
+    --font-h2-m :32px;
+    --font-p-d:20px;
+    --font-p-m :16px
+}
+
+.Cblog-1{
+    margin-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    background-image: url("../images/Frame\ 73.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Cblog-1 h1{
+    color: var(--text-1);
+    font-size: var(--font-h-d);
+    margin: 10px auto;
+    font-family: var(--head);
+    text-align: center;
+}
+form{
+    max-width: 450px;
+}
+.form-div{
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-around;
+    max-width: 1140px;
+    padding: 75px 10px;
+    border-radius: 25px;
+    margin: 0px auto;
+}
+
+.form-div input{
+    font-family: var(--body);
+    font-size: var(--font-h2-m);
+    max-width: 430px;
+    border: none;
+    height: 65px;
+    border-radius: 15px;
+    margin: 20px 0px;
+    padding: 3px 10px;
+}
+.form-div textarea{
+    font-family: var(--body);
+    font-size: var(--font-h2-m);
+    max-width: 430px;
+    border: none;
+    border-radius: 15px;
+    margin: 20px 0px;
+    padding: 3px 10px;
+}
+
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 600;
+    font-family: var(--head);
+    font-size: var(--font-h-d);
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.form-div textarea:placeholder-shown{
+    font-family: var(--head);
+    font-size: var(--font-h2-m);
+    color: var(--text-2);
+}
+.form-div input:placeholder-shown{
+    font-size: var(--font-h2-m);
+    color: var(--text-2);
+}
+@media (max-width:1024px){
+    .form-div img{
+        display: none;
+    }
+}
+
+@media (max-width:650px){
+    .contact-info{
+        font-size: var(--font-p-m);
+    }
+    
+    .form-div input{
+        font-family: var(--body);
+    font-size: var(--font-p-d-m);
+    max-width: 250px;
+    border: none;
+    height: 35px;
+    border-radius: 15px;
+    margin: 20px 0px;
+    padding: 3px 10px;
+    }
+    .form-div textarea:placeholder-shown{
+        font-family: var(--head);
+        font-size: var(--font-p-m);
+        color: var(--text-2);
+    }
+}

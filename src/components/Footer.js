@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../images/logo.png"
+import {Link} from "react-router-dom"
 import { Icon } from '@iconify/react';
 import "../css/Footer.css"
 
@@ -16,18 +17,18 @@ export default function Footer() {
         <div className='pages-div'>
           <div>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact US</li>
+              <li><Link to="/" className='linked-f'>Home</Link></li>
+              <li><Link to="/" className='linked-f'>About</Link></li>
+              <li><Link to="/" className='linked-f'>Services</Link></li>
+              <li><Link to="/" className='linked-f'>Contact US</Link></li>
             </ul>
           </div>
           <div>
             <ul>
-              <li>License</li>
-              <li>Changelog</li>
-              <li>Password</li>
-              <li>Privacy policy</li>
+              <li className='linked-f'>License</li>
+              <li className='linked-f'>Changelog</li>
+              <li className='linked-f'>Password</li>
+              <li className='linked-f'>Privacy policy</li>
             </ul>
           </div>
           </div>
@@ -40,11 +41,11 @@ export default function Footer() {
           <div className='Social-div'>
             <h3>Social Media</h3>
             <div className='icon-div'>
-              <Icon icon="ic:baseline-facebook"  className='icon'/>
-              <Icon icon="ic:round-mail"  className='icon'/>
-              <Icon icon="ri:instagram-line"  className='icon'/>
-              <Icon icon="mdi:linkedin"  className='icon'/>
-              <Icon icon="mdi:twitter"  className='icon'/>
+              <a href="https://www.facebook.com/" target='_blank'><Icon icon="ic:baseline-facebook"  className='icon'/></a>
+              <a href="https://mail.google.com/" target='_blank'><Icon icon="ic:round-mail"  className='icon'/></a>
+              <a href="https://www.instagram.com/" target='_blank'><Icon icon="ri:instagram-line"  className='icon'/></a>
+              <a href="https://www.linkedin.com/" target='_blank'><Icon icon="mdi:linkedin"  className='icon'/></a>
+              <a href="https://twitter.com/" target='_blank'><Icon icon="mdi:twitter"  className='icon'/></a>
             </div>
           </div>
         </div>

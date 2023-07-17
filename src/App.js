@@ -10,11 +10,13 @@ import{
 } from 'react-router-dom';
 import Services from './components/Services';
 import Contactus from './components/Contactus';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
     <Router>
+      <ScrollToTop/>
       
       <Navbar/>
       <Routes>

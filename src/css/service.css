@@ -22,9 +22,9 @@
 .div-imgs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0px auto;
 }
 .service{
@@ -63,6 +63,7 @@
 }
 
 @media (max-width:650px) {
+    
     .service-img{
         height: 360px;
     }

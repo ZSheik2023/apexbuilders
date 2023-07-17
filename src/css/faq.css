@@ -43,3 +43,17 @@
     line-height: normal;
     margin-top: -20px;
 }
+
+@media (max-width:650px){
+    .faq h4{
+        color: var(--text-1, #FFF);
+        font-family: var(--head);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .faq p{
+        font-size: var(--font-p-m);
+    }
+}

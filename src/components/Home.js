@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import "../css/Button.css"
 import "../css/Home.css"
 import imgB1 from "../images/pexels-anamul-rezwan-1216589.jpg"
@@ -23,8 +24,8 @@ export default function Home() {
           We provide comprehensive construction services to <br /> meet all of your needs. From residential remodelling <br /> to commercial construction.
         </p>
         <div className='heroBtn-div'>
-          <button className='btn-2'>Learn more</button>
-          <button className='btn-3'>Our Services</button>
+        <Link to="/about" ><button className='btn-2'>Learn more</button></Link>
+        <Link to="/service"  ><button className='btn-3'>Our Services</button></Link> 
         </div>
       </div>
       <div className='blog-1'>
@@ -84,7 +85,7 @@ export default function Home() {
         <div className='blog-4'>
           <div className='b4-div1'>
             <h2>Do you have a project <br/> to discuss?</h2>
-            <button>learn more</button>
+            <Link to="/contact"  ><button>learn more</button></Link>
           </div>
         </div>
         <ServiceDiv title="Our Services" img1={imgS4} title1="Jake Warner" img2={imgS5} title2="Linda Rose" img3={imgS6} title3="George will" st1="Chairman" st2="Senior Engineer" st3="Architect" visibility="none"/>
@@ -94,7 +95,7 @@ export default function Home() {
           <div>
             <h2>Construction Solutions for Every Need</h2>
             <p>From design to completion, our customized construction <br/> solutions meet all your needs</p>
-            <button className='btn-5'>Contact Us</button>
+            <Link to="/contact"  ><button className='btn-5'>Contact Us</button></Link>
           </div>
           </div>
         </div>

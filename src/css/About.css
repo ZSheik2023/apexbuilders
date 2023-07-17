@@ -29,7 +29,7 @@
 }
 .Ablog-2{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     max-width: 1140px;
@@ -79,7 +79,7 @@
 }
 .Ablog-4{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -126,7 +126,7 @@
 .Ab-5div{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin: 40px auto;
 }
@@ -166,4 +166,42 @@
    font-weight: 600;
    margin: 15px auto;
    text-align: center;
+}
+
+@media (max-width:650px){
+    .Ab-5div div p{
+        color:var(--text-1);
+        font-size: var(--font-p-m);
+        font-family: var(--head);
+     }
+    .Ablog-4 p{
+        color: var(--text-2);
+        font-size: var(--font-p-m);
+        font-family: var(--body);
+        font-weight: 600;
+        margin: 20px auto;
+        margin-left: 0px;
+    }
+    .Ablog-2 p{
+        font-size: var(--font-p-m);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    h1{
+        font-size: var(--font-h-m);
+    }
+    h2{
+        font-size: var(--font-h-m);
+    }
+    .Ablog-2 p{
+        font-size: var(--font-p-m);
+        margin-left: 0px;
+    }
+    .Ablog-4 img{
+        width: 300px;
+    }
+    .Ablog-2 img{
+        width: 300px;
+    }
 }

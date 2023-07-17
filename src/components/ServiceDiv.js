@@ -1,5 +1,6 @@
 import React from 'react'
 import Service from './Service'
+import {Link} from "react-router-dom"
 import "../css/service.css"
 import "../css/Button.css"
 
@@ -17,7 +18,7 @@ export default function ServiceDiv(props) {
         <Service img={props.img3} title={props.title3} visibilityst={props.visibilityst3} st={props.st3}/>
         </div>
         <div className='btn-div'>
-        <button className='btn-4' style={myVisibility}>Show more</button>
+        <Link to="/service" className='linked'><button className='btn-4' style={myVisibility}>Show more</button></Link>
         </div>
       </div>
     </div>
