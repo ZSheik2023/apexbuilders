@@ -44,6 +44,7 @@
     line-height: normal;
 }
 .Ablog-2 p{
+    max-width: 500px;
     margin-left: 25px;
     color: var(--text-2);
     font-family: var(--body);
@@ -82,10 +83,11 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0px auto;
     margin-top: 60px;
     margin-bottom: 60px;
     max-width: 1140px;
-    margin: 0px auto;
+    
 }
 .Ablog-4 h2{
     color: var(--text-2);
@@ -154,7 +156,7 @@
 }
 .Ablog-6 div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1140px;
     margin: 0px auto;
@@ -167,7 +169,23 @@
    margin: 15px auto;
    text-align: center;
 }
-
+@media (max-width:768px) {
+    .Ablog-2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Ablog-4 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Ablog-2 p{
+        text-align: center;
+    }
+}
 @media (max-width:650px){
     .Ab-5div div p{
         color:var(--text-1);
@@ -182,11 +200,13 @@
         margin: 20px auto;
         margin-left: 0px;
     }
+    
     .Ablog-2 p{
         font-size: var(--font-p-m);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
     }
     h1{
         font-size: var(--font-h-m);
@@ -197,11 +217,26 @@
     .Ablog-2 p{
         font-size: var(--font-p-m);
         margin-left: 0px;
+        text-align: center;
+    }
+    .Ablog-2 h2{
+        font-size: var(--font-h-m);
+        text-align: center;
+    }
+    .Ablog-4 h2{
+        font-size: var(--font-h-m);
+        text-align: center;
+    }
+    .Ablog-4 p{ 
+        text-align: center;
     }
     .Ablog-4 img{
         width: 300px;
     }
     .Ablog-2 img{
         width: 300px;
+    }
+    .Ablog-6 h2{
+        font-size: var(--font-h-m);
     }
 }

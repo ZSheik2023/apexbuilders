@@ -17,13 +17,12 @@ function App() {
     <>
     <Router>
       <ScrollToTop/>
-      
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/service' element={<Services/>}></Route>
-        <Route path='/contact' element={<Contactus/>}></Route>
+        <Route path="/" exact element={<Home/>}></Route>
+        <Route path='/about'exact  element={<About/>}></Route>
+        <Route path='/service'exact  element={<Services/>}></Route>
+        <Route path='/contact'exact  element={<Contactus/>}></Route>
       </Routes>
       <Footer/>
     </Router>

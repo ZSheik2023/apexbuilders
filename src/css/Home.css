@@ -57,7 +57,7 @@
     max-width: 1140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0px auto;
     padding: 100px 0px;
@@ -93,7 +93,7 @@
 }
 .b2-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .b2-box{
@@ -141,7 +141,7 @@
 }
 .b3-div1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .b3-div{
     max-width: 1140px;
@@ -149,7 +149,7 @@
 }
 .b3-div2{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 25px;
 }
 .b3d-h{
@@ -248,7 +248,7 @@
         margin-right: 230px;
     }
     .blog-4{
-        background-image: url("../images/Frame\ 70.jpg");
+        background-image: url("../images/Frame\ 75.jpg");
         background-position: right;
     }
     .blog-5 img{

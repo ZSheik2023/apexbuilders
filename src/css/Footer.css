@@ -67,10 +67,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .Social-div h3{
     font-size: var(--font-h-t);
     color: var(--primary);
+}
+.icon-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .icon{
     font-size: 54px;

@@ -103,7 +103,22 @@ form{
     margin: 20px 0px;
     padding: 3px 10px;
     }
+    .form-div textarea{
+        font-family: var(--body);
+        font-size: var(--font-p-d-m);
+        max-width: 250px;
+        border: none;
+        border-radius: 15px;
+        margin: 20px 0px;
+        padding: 3px 10px;
+    }
+    
     .form-div textarea:placeholder-shown{
+        font-family: var(--head);
+        font-size: var(--font-p-m);
+        color: var(--text-2);
+    }
+    .form-div input:placeholder-shown{
         font-family: var(--head);
         font-size: var(--font-p-m);
         color: var(--text-2);

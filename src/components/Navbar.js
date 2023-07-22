@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import logo from "../images/logo.png"
 import { Icon } from '@iconify/react';
-import {Link} from "react-router-dom"
+import {Link,NavLink} from "react-router-dom"
 import "../css/Navbar.css"
 import "../css/Button.css"
 
@@ -27,9 +27,9 @@ const Navbar = () => {
         </div>
         <div>
             <ul className='menu'>
-                <li className='link'><Link to="/" className='linked'>Home</Link></li>
-                <li className='link'><Link to="/about" className='linked'>About</Link></li>
-                <li className='link'><Link to="/service" className='linked'>Services</Link></li>
+                <li className='link'><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink></li>
+                <li className='link'><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink></li>
+                <li className='link'><NavLink to="/service" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Services</NavLink></li>
             </ul>
         </div>
         <div className='Nav-btns'>

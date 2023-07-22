@@ -79,6 +79,15 @@
 .link{
     list-style: none;
 }
+.active{
+    color: var(--primary);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 300ms;
+    cursor: pointer;
+}
 .linked{
     color: var(--text-2);
     text-decoration: none;
@@ -88,9 +97,19 @@
     transition: 300ms;
     cursor: pointer;
 }
-.linked:hover{
+.inactive{
+    color: var(--text-2);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.inactive:hover{
     color:var(--primary) ;
 }
+
 .link-menu{
     list-style: none;
     font-style: normal;
