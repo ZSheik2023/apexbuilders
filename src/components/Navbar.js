@@ -1,14 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import logo from "../images/logo.png"
 import { Icon } from '@iconify/react';
-import {Link,NavLink} from "react-router-dom"
+import {Link,NavLink,useLocation} from "react-router-dom"
 import "../css/Navbar.css"
 import "../css/Button.css"
 
 
-const Navbar = () => {
 
+const Navbar = () => {
   const [navToggle,setNavToggle] = useState(true)
+  const closeNavbar = ()=>{
+    setNavToggle(true)
+  }
   const menuclick = () => {
     if(navToggle){
       setNavToggle(false)
@@ -17,6 +20,10 @@ const Navbar = () => {
       setNavToggle(true)
     }
   }
+  const{pathname} = useLocation();
+  useEffect(() => {
+    closeNavbar();
+  }, [pathname]);
   return (
     <div>
       <div className='navbar-div'>
